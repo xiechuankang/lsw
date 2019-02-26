@@ -1,0 +1,22 @@
+#top{
+    height:30px;
+    background:#f5f5f5;
+}
+ .topcontent{
+    font-size:12px;
+    width:1200px;
+    margin:0 auto;
+    line-height:30px;
+    color:#777;
+    li{
+         a{
+          color:#777;
+     }
+    }
+}
+.topright{
+    float:right;
+    li{
+        margin-right:10px;
+    }
+}

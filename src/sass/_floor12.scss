@@ -1,0 +1,26 @@
+#floor_12{
+    margin-top:15px;
+}
+.floor_12-top{
+    font-size:$fontsize+8;
+    font-weight:600;
+    height:30px;
+}
+.floor_12-bottom{
+    background:$sizecolor1;
+    li{
+        width:132px;
+        height:80px;
+        text-align:center;
+        border-right:1px solid #f1f1f1;
+       img{
+           display:block;
+           margin:15px auto;
+           width:84px;
+           height:45px;
+       }
+    }
+}
+.floor_12-bottom .lit{
+    border-right:none;
+}

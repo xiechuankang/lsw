@@ -1,0 +1,144 @@
+.floor_2-bottom-right .item{
+    display:none;
+}
+.floor_2-bottom-right .show{
+    display:block;
+}
+@for $i from 2 through 10{
+  #floor_#{$i}{
+     margin-top:20px;
+  }
+  .floor_#{$i}-top{
+    width: 1200px;
+    height:35px;
+    line-height:35px;
+    p{  
+        width:230px;
+        height:35px;
+        font-size:$fontsize+8;
+        float:left;
+        font-weight:600;
+    }
+    ul{
+        float:right;
+    }
+}
+.tab#{$i}{
+   padding:0 5px; 
+   color:#f8223b;
+   margin-left:8px;
+   font-size:$fontsize+1;
+   margin-right:10px;
+}
+.floor_#{$i}-top .active#{$i}{
+    color:$sizecolor1;
+    background:#f8223b;
+    border-radius:3px;
+}
+.floor_#{$i}-bottom{
+    width:1200px;
+    height:430px;
+}
+.floor_#{$i}-bottom-left{
+        width: 240px;
+        height: 430px;
+        float: left;
+}
+.floor_#{$i}-bottom-left img{
+    width:100%;
+    height:100%;
+}
+.floor_#{$i}-bottom-right{
+    float:left;
+    width:960px;
+    height:430px;
+     ul{
+         li{
+             display:block;
+             width:239px;
+             height:214px;
+             background:$sizecolor1;
+             border-right:1px solid #f1f1f1;
+             text-align:center;
+         }
+     }
+}
+
+.floor_#{$i}-bottom-right .lit{
+    border-right:none;
+}
+.floor_#{$i}-bottom-right .price{
+    font-size:$fontsize;
+
+}
+}
+
+//#floor_2{
+//  margin-top:20px;
+//}
+//.floor_2-top{
+//  width: 1200px;
+//  height:35px;
+//  line-height:35px;
+//  p{  
+//      width:230px;
+//      height:35px;
+//      font-size:$fontsize+8;
+//      float:left;
+//      font-weight:600;
+//  }
+//  ul{
+//      float:right;
+//  }
+//}
+//.tab2{
+// padding:0 5px; 
+// color:#f8223b;
+// margin-left:8px;
+// font-size:$fontsize+2;
+//}
+//.floor_2-top .active2{
+//  color:$sizecolor1;
+//  background:#f8223b;
+//  border-radius:3px;
+//}
+//.floor_2-bottom{
+//  width:1200px;
+//  height:430px;
+//}
+//.floor_2-bottom-left{
+//      width: 240px;
+//      height: 430px;
+//      float: left;
+//}
+//.floor_2-bottom-left img{
+//  width:100%;
+//  height:100%;
+//}
+//.floor_2-bottom-right{
+//  float:left;
+//  width:960px;
+//  height:430px;
+//   ul{
+//       li{
+//           display:block;
+//           width:239px;
+//           height:214px;
+//           background:$sizecolor1;
+//           border-right:1px solid #f1f1f1;
+//           text-align:center;
+//       }
+//   }
+//}
+//
+//.floor_2-bottom-right .lit{
+//  border-right:none;
+//}
+//.floor_2-bottom-right .price{
+//  font-size:$fontsize;
+//
+//}
+
+.clear{
+  @include clearbox;
+}

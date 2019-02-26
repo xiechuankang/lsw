@@ -1,0 +1,52 @@
+#nav{
+    background:#e61952;
+    height:40px;
+}
+.navwrapper{
+    margin:0 auto;
+    width:1200px;
+    h3{
+        width:190px;
+        background:#1d1d1d;
+        float:left;
+        height:40px;
+        a{
+        background:#1d1d1d;
+        display:block;
+        line-height:40px;
+        background:$bgurl;
+        background-position:130px -245px;
+        text-indent:20px;
+        color:$sizecolor1;
+     }
+    };
+    
+     ul{
+        li{
+            line-height:40px;
+            a{
+                color:$sizecolor1;
+                display:block;
+                text-align:center;
+                width:85px;
+                height:40px;
+                font-weight:bold;
+                font-size:$fontsize+2;
+            }
+            a:hover{background:#FF0066;}
+        }
+     }
+     div{
+         float:right;
+         height:40px;
+         background:$bgurl;
+         background-position:0 -215px;
+         li{
+             a{
+                 width:210px;
+                 display:inline-block;
+                 color:$sizecolor1;
+             }
+         }
+     }
+}

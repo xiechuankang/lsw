@@ -1,0 +1,9 @@
+#section_3 a img{
+    display:block;
+    float:left;
+    width:400px;
+    height:150px;
+}
+ .clear{
+       @include clearbox;
+    }

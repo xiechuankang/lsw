@@ -1,0 +1,67 @@
+$map:(border:none,background:transparent,line-height:36px);
+
+#header{
+    width: 100%;
+}
+.headerwrapper{
+    width: 1200px;
+    height:130px;
+    margin:0 auto;
+}
+#logo{
+    float:left;
+    display:block;
+    width:230px;
+    height:70px;
+    margin:20px 30px 30px 0;
+    background:$bgurl;
+}
+.header-center{
+    margin:40px 0 0 100px;
+    float:left;
+    width:518px;
+}
+.search{
+    width:518px;
+    height:36px;
+    background:$bgurl;
+    background-position:0 -75px;
+}
+  input:nth-child(1){
+      line-height:map-get($map,line-height);
+      border:map-get($map,border);
+      background:map-get($map,background);
+      font-size:$fontsize;
+      color:$sizecolor;
+      float:left;
+      width:415px;
+      line-height:32px;
+      text-indent:30px;
+  }
+  input:nth-child(2){
+      border:map-get($map,border);
+      background:map-get($map,background);
+      line-height:map-get($map,line-height);
+      font-size:$fontsize+2;
+      color:#fff;
+      float:right;
+      width:103px;
+      line-height:32px;
+  }
+.search1{
+    width:518px;
+    a{
+       font-size:$fontsize+2;
+       color:$sizecolor;
+    }
+    a:hover{color:#E72C3A;}
+}
+#logo1{
+    width:205px;
+    height:95px;
+    margin:20px 0 15px 0;
+    float:right;
+    display:block;
+    background:url(../img/head.png)0px -125px no-repeat;
+}
+

@@ -1,0 +1,19 @@
+@charset "utf-8";
+//字体大小
+$fontsize:12px;
+//字体颜色
+$sizecolor:#777;
+$sizecolor1:#fff;
+$sizecolor2:#e7283a;
+//精灵图的背景图片
+$bgurl:url(../img/head.png)no-repeat;
+$bgurlnav:url(../img/menu.png)no-repeat;
+$bgurlbar:url(../img/r_bar.png)no-repeat;
+//省略号
+@mixin ellipsisflag($boxwidth,$boxheight){
+    width:$boxwidth;
+    height:$boxheight;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}

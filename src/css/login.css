@@ -1,0 +1,98 @@
+@charset "UTF-8";
+#box {
+  width: 350px;
+  height: 350px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -175px;
+  margin-left: -175px;
+  background: #cccccc;
+}
+
+.box-top {
+  width: 350px;
+  height: 40px;
+  border-bottom: 2px solid #ff0000;
+  color: #999;
+  position: relative;
+}
+.box-top p {
+  margin: 5px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 24px;
+  font-family: "宋体";
+}
+.box-top span {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 18px;
+}
+
+.box-content {
+  border-bottom: 1px dashed #E9E9E9;
+  margin-bottom: 5px;
+}
+
+.zh {
+  text-align: center;
+  width: 350px;
+  height: 50px;
+  line-height: 50px;
+}
+.zh input {
+  width: 250px;
+  height: 30px;
+  background: #E9E9E9;
+  border: 1px solid #dfdfdf;
+}
+
+.pwd {
+  text-align: center;
+  width: 350px;
+  height: 50px;
+  line-height: 50px;
+}
+.pwd input {
+  width: 250px;
+  height: 30px;
+  background: #E9E9E9;
+  border: 1px solid #dfdfdf;
+}
+
+.cb {
+  width: 350px;
+  height: 20px;
+  line-height: 20px;
+  color: #333;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.box-footer {
+  width: 300px;
+  height: 50px;
+  background: #F03B6E;
+  line-height: 50px;
+}
+
+.denglu {
+  margin-left: 25px;
+}
+.denglu input {
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  font-family: "宋体";
+  width: 300px;
+  height: 49px;
+  line-height: 49px;
+  color: #fff;
+  font-size: 24px;
+  background: url(http://www.lingshi.com/templates/default/images/login.jpg) 0 -46px no-repeat;
+}
+
+/*# sourceMappingURL=login.css.map */

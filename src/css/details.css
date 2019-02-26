@@ -1,0 +1,291 @@
+li {
+  float: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+#top {
+  height: 30px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #fff;
+}
+
+.topcontent {
+  font-size: 12px;
+  width: 1200px;
+  margin: 0 auto;
+  line-height: 30px;
+  color: #777;
+}
+.topcontent li a {
+  color: #777;
+}
+
+.topright {
+  float: right;
+}
+.topright li {
+  margin-right: 10px;
+}
+
+#content {
+  background: #faf1f4;
+  height: 600px;
+}
+
+.contentwrap {
+  width: 1200px;
+  margin: 0 auto;
+  height: 600px;
+  border: 1px solid #f4e9ed;
+  background: #fff;
+}
+
+.content-left {
+  margin-left: 10px;
+  float: left;
+  height: 600px;
+  position: relative;
+}
+
+.small-pic {
+  margin-top: 8px;
+  width: 460px;
+  height: 460px;
+  position: relative;
+}
+.small-pic img {
+  width: 450px;
+  height: 450px;
+}
+
+#sf {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  visibility: hidden;
+}
+
+#bf {
+  width: 400px;
+  height: 500px;
+  border: 1px solid #000;
+  overflow: hidden;
+  position: absolute;
+  left: 460px;
+  top: 0px;
+  visibility: hidden;
+  z-index: 100;
+}
+
+#bf img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 800px;
+  height: 800px;
+}
+
+.list-img {
+  margin-top: 8px;
+  position: absolute;
+  width: 460px;
+  height: 95px;
+}
+.list-img li {
+  width: 84px;
+  height: 84px;
+  margin-right: 8px;
+}
+.list-img li img {
+  width: 84px;
+  height: 84px;
+}
+
+.content-right {
+  float: left;
+  width: 730px;
+  height: 600px;
+}
+
+p {
+  font-size: 13px;
+  color: #999;
+}
+
+.title {
+  font-size: 24px;
+  color: #333;
+  margin: 35px 0 20px 15px;
+}
+
+.div1 {
+  background: #f9dfe6;
+  height: 84px;
+}
+
+.price {
+  width: 150px;
+  height: 84px;
+  line-height: 84px;
+  font-size: 35px;
+  color: red;
+  margin-left: 10px;
+  float: left;
+}
+.price em {
+  font-style: normal;
+}
+
+.p2 {
+  float: right;
+  width: 550px;
+  height: 84px;
+  position: relative;
+}
+.p2 span {
+  padding: 2px;
+  margin-right: 5px;
+}
+
+.span1 {
+  position: absolute;
+  background: #ef8ea8;
+  color: #fff;
+  font-size: 12px;
+  top: 20px;
+  left: -10px;
+}
+
+.span2 {
+  position: absolute;
+  font-size: 14px;
+  color: #666;
+  top: 18px;
+  left: 75px;
+}
+
+.span3 {
+  position: absolute;
+  font-size: 12px;
+  top: 40px;
+  left: -10px;
+}
+
+.no {
+  line-height: 35px;
+  margin: 5px auto;
+}
+.no span {
+  color: #666;
+}
+
+.info {
+  line-height: 30px;
+}
+.info span {
+  padding-left: 10px;
+}
+.info a {
+  color: #666;
+  padding-right: 20px;
+}
+
+.point {
+  line-height: 30px;
+}
+.point a {
+  color: red;
+}
+
+.num {
+  margin: 10px 0;
+  line-height: 25px;
+}
+.num ul {
+  float: left;
+  border: 1px solid #e0e0e0;
+}
+.num span {
+  float: left;
+  color: #999;
+  font-size: 13px;
+}
+
+.reduce {
+  font-size: 20px;
+  border-right: 1px solid #ccc;
+  background: url(http://www.lingshi.com/templates/default/images/input_bg.png) repeat-x;
+}
+.reduce a {
+  display: block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
+
+.input {
+  border-right: 1px solid #ccc;
+  width: 50px;
+}
+.input input {
+  width: 50px;
+  height: 23px;
+  line-height: 23px;
+  border: none;
+  text-align: center;
+  color: #333;
+}
+
+.add {
+  font-size: 20px;
+  background: url(http://www.lingshi.com/templates/default/images/input_bg.png) repeat-x;
+}
+.add a {
+  text-align: center;
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+.btn {
+  margin: 20px;
+  padding: 25px;
+  border-bottom: 1px solid #E0F2BE;
+  border-top: 1px solid #E0F2BE;
+}
+
+.btn-car {
+  display: inline-block;
+  width: 253px;
+  height: 47px;
+  background: url(http://www.lingshi.com/templates/default/images/snack_sp.png) 0px -116px no-repeat;
+}
+
+.btn-b {
+  display: inline-block;
+  width: 168px;
+  height: 47px;
+  margin-left: 20px;
+  background: url(http://www.lingshi.com/templates/default/images/snack_sp.png)-282px -116px no-repeat;
+}
+
+.mf a {
+  color: #458df0;
+  padding: 0 5px;
+}
+.mf span {
+  color: red;
+}
+
+.clear::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+/*# sourceMappingURL=details.css.map */

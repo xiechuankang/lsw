@@ -1,0 +1,85 @@
+#section_1{
+    margin-top:20px;
+}
+.section1-top{
+    width: 1200px;
+    height:30px;
+    line-height:30px;
+    margin-bottom:10px;
+    p{  
+        width:230px;
+        height:30px;
+        float:left;
+        text-indent:-9999px;
+        background:$bgurl;
+        background-position:0px -337px;
+    }
+    ul{
+        float:right;
+    }
+}
+.bg1,.bg2,.bg3{
+    width:30px;
+    height:30px;
+    border-radius:20%;
+    background:#000200;
+    margin-right:5px;
+    color:#fff;
+    text-align:center;
+}
+
+.section1-bottom{
+    width:1200px;
+    height:428px;
+}
+.section1-bottom-left{
+        width: 310px;
+        height: 428px;
+        float: left;
+}
+.section1-bottom-left img{
+    width:100%;
+    height:100%;
+}
+.section1-bottom-right{
+    float:left;
+    width:890px;
+    height:428px;
+    background: #fcda4f url(http://image.lingshi.com/data/afficheimg/1444984132628305427.png) bottom no-repeat;
+     ul{
+         margin-top:15px;
+         li{
+             display:block;
+             width:216px;
+             height:190px;
+             background:$sizecolor1;
+             margin:0 5px 5px 0;
+             text-align:center;
+         }
+     }
+}
+.lazy{
+     display:block;
+     width:130px;
+     height:130px;
+     margin:7px auto;
+}
+.title{
+    display:block;
+    line-height:20px;
+    color:$sizecolor;
+    font-size:$fontsize;
+    @include ellipsisflag(140px,20px);
+    margin:0 auto;
+}
+.price{
+    font-size:$fontsize+2;
+    color:$sizecolor2;
+    line-height:20px;
+    i{
+        font-style:normal;
+    }
+}
+.clear{
+    @include clearbox;
+}

@@ -1,0 +1,7 @@
+@mixin clearbox() {
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}

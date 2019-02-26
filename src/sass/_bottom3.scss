@@ -1,0 +1,43 @@
+.bottom_3{
+    margin-top:10px;
+   p{
+      padding:5px 0;
+      height:10px;
+      background:url(http://www.lingshi.com/templates/default/images/footer_repeat.png)repeat-x;
+  } 
+}
+.bottom_3 .one{
+    width:1140px;
+    height:30px;
+    position:relative;
+    margin:0 auto;
+    overflow:hidden;
+    border-bottom:1px solid #dcdcdc;
+    ul{
+        width:1120px;
+    }
+       li{
+        font-size:$fontsize+2;
+        height:30px;
+        line-height:30px;
+        padding:0 10px;
+        a{
+            font-size:$fontsize;
+            color:$sizecolor;
+        }
+    } 
+    
+}
+#open{
+    background:$bgurl;
+    background-position:-22px -612px;
+    position: absolute;
+    width:15px;
+    height:15px;
+    display:block;
+    top:10px;
+    right:10px;
+}
+.clear{
+  @include clearbox;
+}
