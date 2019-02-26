@@ -4,43 +4,44 @@ define(['config'], function() {
 		    //轮播图
 		    var $main=$('#main');
 			var $box=$('#box');
-			var $btn=$('#box ol li');
+			var $btnli=$('#box ol li');
 			var $oLi=$('#box ul li');
-			var timer=null;
+			var $timer=null;
 			var $num=0;
 			var arr=['#ff0000','#fff','#92CDDC','#E5E9E7'];
 			$box.hover(function(){
-				clearInterval(timer);
+				clearInterval($timer);
 			},function(){
-			      timer=setInterval(function(){
+			    $timer=setInterval(function(){
 			 	$num++;
-				if($num>$btn.length-1){
+				if($num>$btnli.length-1){
 					$num=0;
 				}
 				fn();
-			 },3000)
+			 },5000)
 			})
 			
-			
-			$btn.on('click',function(){
+			$btnli.on('click',function(){
 				$num=$(this).index();
 				fn();	
 			})
 			
-			 timer=setInterval(function(){
+			 $timer=setInterval(function(){
 			 	$num++;
-				if($num>$btn.length-1){
+				if($num>$btnli.length-1){
 					$num=0;
 				}
 				fn();
-			 },3000)
+			 },5000)
 			 
 			 
 			function fn(){
-				$btn.eq($num).addClass('active').siblings('li').removeClass('active');
+				$btnli.eq($num).addClass('active').siblings('li').removeClass('active');
 				$oLi.eq($num).animate({'opacity':1}).siblings('li').animate({'opacity':0});
 				$main.css({background:arr[$num]});
 			}
+			
+			
 			
 		//倒计时
 		var $bg1=$('.section1-top .bg1');
@@ -61,6 +62,7 @@ define(['config'], function() {
 			var nowTime=new Date();
 			var sec=parseInt((futureTime-nowTime)/1000);
 			var min=parseInt(sec%3600/60);
+			var timer1=null;
 			return double(min);
 		}
 		function timehour(){
@@ -70,7 +72,7 @@ define(['config'], function() {
 			var hour=parseInt(sec%86400/3600);
 			return double(hour);
 		}
-		 setInterval(function(){
+		 $timer1=setInterval(function(){
 		 	 $bg1.html(timehour());
 		 	 $bg2.html(timemin());
 		     $bg3.html(timesec());
@@ -125,6 +127,6 @@ define(['config'], function() {
 			});
 	      });
 	
-
+         
 	});
 });

@@ -134,6 +134,7 @@ a{
 .goods{
     width:1150px;
     height:115px;
+    display:none;
     margin:15px auto;
     border:1px solid #e5e5e5;
     font-size: 13px;
@@ -255,7 +256,7 @@ li{
     border-top:1px solid #e5e5e5;
 }
 .empty,.sum,.sum-num{
-    width:200px;
+    width:250px;
     height:100px;
     line-height:100px;
     text-align:center;
@@ -263,8 +264,12 @@ li{
 }
 .empty{
     float:left;
+    text-align:left;
+    span{
+        cursor:pointer;
+    } 
     input{
-        margin-left:17px;
+        margin-left:35px;
     }
 }
 .sum{
@@ -277,6 +282,8 @@ li{
     top:0px;
     right:10px;
     font-size:24px;
+    display: block;
+    width:110px;
     color:red;
 }
 .sum-num{
