@@ -21,13 +21,6 @@
   font-size: 24px;
   font-family: "瀹嬩綋";
 }
-.box-top span {
-  cursor: pointer;
-  position: absolute;
-  top: 5px;
-  right: 15px;
-  font-size: 18px;
-}
 
 .box-content {
   border-bottom: 1px dashed #E9E9E9;
@@ -75,6 +68,7 @@ span {
   right: 30px;
   height: 30px;
   color: #449fe6;
+  cursor: pointer;
 }
 
 .cb {

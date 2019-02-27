@@ -1,1 +1,1 @@
-require(['index','details','cart']);
+require(['index','details','cart','registor','login']);

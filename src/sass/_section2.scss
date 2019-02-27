@@ -37,17 +37,18 @@
              border-right:1px solid #f1f1f1;
              background:$sizecolor1;
              text-align:center;
+            
          }
             .clear{
                 @include clearbox;
             }
      }
 }
-.img2{
-     display:block;
-     width:180px;
-     height:180px;
-     margin:22px auto;
+.section2-bottom .lazy{
+    width:180px;
+    height:180px;
+    display:block;
+    margin-top:28px;
 }
 .title{
     display:block;
@@ -71,3 +72,4 @@
 .lib{
     border-top:1px solid #f1f1f1;
 }
+ 

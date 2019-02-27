@@ -78,7 +78,8 @@ define(['config'], function() {
         		cookiearray();
         		if($.inArray($sid,arrsid)!=-1){
         			var num=parseInt(arrnum[$.inArray($sid,arrsid)])+parseInt($('#count').val());
-        			arrnum[$.inArray($sid,arrsid)]=num;	
+        			arrnum[$.inArray($sid,arrsid)]=num;
+        			$.cookie('cookienum',arrnum.toString(),{expires:30});
         		}else{
         			arrsid.push($sid);
         			$.cookie('cookiesid',arrsid.toString(),{expires:30});

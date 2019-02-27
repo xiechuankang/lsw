@@ -4,19 +4,27 @@
 		<meta charset="UTF-8">
 		<title>登录</title>
 		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<script src="script/thirdplugins/require.js" defer async="true" data-main="script/js/main"></script>
 	</head>
 	<body>
 		<div id="box">
 			<div class="box-top">
 				<p>登录</p>
-				<span>X</span>
 			</div>
 			<div class="box-content">
-				<form action="" method="post">
-					<p class="zh"><label for="">账号：</label><input type="text" value=""/></p>
-					<p class="pwd"><label for="">密码：</label><input type="text" value=""/></p>
-					<p class="cb"><input type="checkbox" value="" checked/><label for="">请保存我这次的登录信息</label></p>
-					<p class="denglu"><input type="button" value="登&nbsp;录"/></p>
+				<form action="http://10.31.162.190/HTML5-1810/projectname/php/login.php" method="post" id="form2">
+					<p class="zh">
+						<label for="">账号：</label>
+						<input type="text" id="username" name="username"" autocomplete="off" value=""/>
+					</p>
+					<p class="pwd">
+						<label for="">密码：</label>
+						<input type="password" id="password" name="password" autocomplete="off"/>
+					</p>
+					<p class="cb">
+						<input type="checkbox" value="" checked/>
+						<label for="">请保存我这次的登录信息</label></p>
+					<p class="denglu"><input type="button" name="submit" id="delu" value="登&nbsp;录"/></p>
 				</form>
 			</div>
 		</div>

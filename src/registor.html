@@ -4,29 +4,29 @@
 		<meta charset="UTF-8">
 		<title>注册</title>
 		<link rel="stylesheet" type="text/css" href="css/registor.css"/>
+		<script src="script/thirdplugins/require.js" defer async="true" data-main="script/js/main"></script>
 	</head>
 	<body>
 		<div id="box">
 			<div class="box-top">
 				<p>注册</p>
-				<span>X</span>
 			</div>
 			<div class="box-content">
-				<form action="" method="post">
+				<form action="http://10.31.162.190/HTML5-1810/projectname/php/registor.php" method="post" id="form1">
 					<p class="zh">
-						<input type="text" value="邮箱/手机号"/>
-						<span>*</span>
+						<input type="text" id="username" name="username" autocomplete="off" placeholder="邮箱/手机号"/>
+						
 					</p>
 					<p class="pwd">
-						<input type="text" value="密码"/>
-						<span>*</span>
+						<input type="text" id="password" name="password" autocomplete="off" placeholder="密码"/>
+						
 					</p>
 					<p class="checkpwd">
-						<input type="text" value="确认密码"/>
-						<span>*</span>
+						<input type="text" id="confirm_password" name="confirm_password" autocomplete="off" placeholder="确认密码"/>
+						
 					</p>
 					<p class="yzm">
-						<input type="text" value="验证码"/>
+						<input type="text" id="yzm1" name="yzm1" autocomplete="off" placeholder="验证码"/>
 						<a href="javascript:;"><img src="http://www.lingshi.com/captcha.php?1768430104"/></a>
 						<span>换一个</span>
 					</p>
@@ -35,7 +35,7 @@
 						<label for="">我已看过并接受</label>
 						<a href=""><中国零食网注册用户协议></a>
 					</p>
-					<p class="zhuce"><input type="button" value="注&nbsp;册"/></p>
+					<p class="zhuce"><input type="submit" name="submit" value="注册"/></p>
 				</form>
 			</div>
 		</div>

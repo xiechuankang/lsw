@@ -1,5 +1,5 @@
 define(['config'], function() {
-	require(['jquery'], function() {
+	require(['jquery','jqcookie'], function() {
 		  //二级导航
 		    //轮播图
 		    var $main=$('#main');
@@ -93,14 +93,8 @@ define(['config'], function() {
 			 $(this).addClass('active2').parent().siblings('.floor_2-top ul li').children().removeClass('active2');
 			 $item2.eq($(this).parent().index()).addClass('show').siblings().removeClass('show');
 			});
-			
-			
-	     var $btn=$('.r_barleft .dl');
-	      $btn.on('click',function(){
-	      		that.scrollTop('0');
-	      });
-	      
 
+	     //数据渲染
 	$.ajax({
 		url:'http://10.31.162.190/HTML5-1810/projectname/php/index.php',
 		dataType:'json',
@@ -109,7 +103,7 @@ define(['config'], function() {
 		var $html='<ul>';
 		$.each(data,function(index,value){
 			$html+=
-			`<li><p><a href="http://10.31.162.190/HTML5-1810/projectname/src/details.html?sid=${value.sid}"><img class="lazy" src="${value.url}" alt=""/></a></p>
+			`<li><p><a href="http://10.31.162.190/HTML5-1810/projectname/src/details.html?sid=${value.sid}" target="_blank"><img class="lazy" src="${value.url}" alt=""/></a></p>
 		 	     <p><a href="#" class="title">${value.title}</a></p>
 		 	     <p class="price"><i>¥</i>${value.price}</p></li>`;
 		});
@@ -126,7 +120,22 @@ define(['config'], function() {
 				});
 			});
 	      });
-	
-         
+	  
+	  
+	       var $strong=$('strong');
+			var $admin=$('.admin');
+			var $login=$('.login');
+			var $close=$('.close');
+			if($.cookie('name')){
+				$login.css({"display":"inline-block","color":"#ff0000"});
+				$admin.css({"display":"none"});
+			}
+			
+			$close.on('click',function(){
+				$.cookie('name','',{expires:-1,path:'/'});
+				$login.css({"display":"none"});
+				$admin.css({"display":"inline-block"});
+			});
+       
 	});
 });
